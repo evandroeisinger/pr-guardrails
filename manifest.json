@@ -3,6 +3,7 @@
   "name": "PR Merge Guardrails",
   "version": "1.0.0",
   "description": "Hide the GitHub PR merge button on configured days, or when the PR was opened by someone other than you.",
+  "homepage_url": "https://github.com/evandroeisinger/pr-guardrails",
   "permissions": ["storage"],
   "content_scripts": [
     {
