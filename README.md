@@ -1,6 +1,6 @@
 # PR Merge Guardrails
 
-A small Chrome extension that hides the GitHub PR merge button when:
+A small [Chrome extension](https://chromewebstore.google.com/detail/pr-merge-guardrails/didldnjiiloblhbojhkhnmnjfogcbikl) that hides the GitHub PR merge button when:
 
 1. Today is one of your configured blocked days (default: Friday), or
 2. The PR was opened by someone other than you.
