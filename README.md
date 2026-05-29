@@ -35,16 +35,6 @@ PR author and viewer come from the DOM:
 Bot authors (`*[bot]`, `dependabot`, `renovate`) are exempt from the
 others-PR check.
 
-## Files
-
-```text
-manifest.json    Manifest V3 declaration
-content.js       Merge-button detector + hide logic
-options.html     Settings UI (days + others-PR toggle)
-options.js       Settings load/save against chrome.storage.sync
-icons/           16/48/128 PNGs
-```
-
 ## Settings
 
 Stored in `chrome.storage.sync` under `pmgSettings`:
@@ -57,8 +47,6 @@ disable the extension in `chrome://extensions`.
 
 ## Known limitations
 
-- **Enterprise GitHub** (`*.ghe.com`, self-hosted) isn't matched. Add the host
-  to `host_permissions` and `content_scripts.matches` in `manifest.json`.
 - **Time-of-day windows** aren't supported — whole days only.
 - **Co-authored PRs** aren't recognized as "yours" — the others-PR check
   will fire if the PR's `author` isn't you.
